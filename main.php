@@ -39,10 +39,10 @@ class Central
     }
     return $resultedString;
   }
-
+  /* 0 is for json format */
   public function statusRamalFromClient($cliente_id)
   {
-    return $this->execCommand("lista_status_ramais_empresa $cliente_id json");
+    return $this->execCommand("lista_status_ramais_empresa $cliente_id 0 json");
   }
 
   public function statusRamal($ramal)
